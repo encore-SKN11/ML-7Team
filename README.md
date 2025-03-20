@@ -94,7 +94,7 @@
 | n_estimators | Learning Rate | Result 1 | Result 2 |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![4-100-0.01](image/4-100-0.01.png) | <img src="image/image.png"> |
-| 100         | 0.1          | ![4-100-0.1](image/4-100-0.1.png) | !<img src="image/image (1).png">|
+| 100         | 0.1          | ![4-100-0.1](image/4-100-0.1.png) | <img src="image/image (1).png">|
 | 200         | 0.01         | ![4-200-0.01](image/4-200-0.01.png) |  |
 | 200         | 0.1          | ![4-200-0.1](image/4-200-0.1.png) |  |
 
@@ -105,14 +105,18 @@
 | n_estimators | Learning Rate | Result 1 | Result 2 |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
-| 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | !<img src="image/image (5).png"> |
+| 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
-   - features : rooms, buildingarea, yearbuilt (3개 변수)
-     1. n_estimators = 100, learning rate : 0.01
-     2. n_estimators = 100, learning rate : 0.1
+### Features: rooms, buildingarea, yearbuilt (3개 변수)
 
-   - features : rooms, buildingarea, yearbuilt, type_code (4개 변수)
-     1. n_estimators = 100, learning rate : 0.01
-     2. n_estimators = 100, learning rate : 0.1
+| n_estimators | Learning Rate | Result 1 | Result 2 |
+|-------------|--------------|----------|----------|
+| 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
+| 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
-     
+### Features: rooms, buildingarea, yearbuilt, type_code (4개 변수)
+
+| n_estimators | Learning Rate | Result 1 | Result 2 |
+|-------------|--------------|----------|----------|
+| 100         | 0.01         | ![7-100-0.01](image/4-ty-0.01.png) | <img src="image/image (6).png"> |
+| 100         | 0.1          | ![7-100-0.1](image/4-ty-0.1.png) | <img src="image/image (7).png"> |
