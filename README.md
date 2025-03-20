@@ -87,29 +87,25 @@
 
     <img src="image/folium.png" height="500">
     
-7. Machine Learning
+## 7. Machine Learning
 
-   - features : rooms, buildingarea, car, postcode(4개 변수)
-     1. n_estimators = 100, learning rate : 0.01
-        <img src="image/4-100-0.01.png">
-      <img src="image/image.png">
-        n_estimators = 100, learning rate : 0.1
-        <img src="image/4-100-0.1.png">
-      <img src="image/image (1).png">
-     2. n_estimators = 200, learning rate : 0.01
-        <img src="image/4-200-0.01.png">
-        
-        n_estimators = 200, learning rate : 0.1
-        <img src="image//4-200-0.1.png">
+### Features: rooms, buildingarea, car, postcode (4개 변수)
 
-   - features : rooms, buildingarea, yearbuilt, type_code, bedroom2, 
-     bathroom, car ( 7개 변수)
-     1. n_estimators = 100, learning rate : 0.01
-        <img src="image/7-100-0.01.png">
-        <img src="image/image (4).png">
-     3. n_estimators = 100, learning rate : 0.1
-        <img src="image/7-100-0.1.png">
-        <img src="image/image (5).png">
+| n_estimators | Learning Rate | Result 1 | Result 2 |
+|-------------|--------------|----------|----------|
+| 100         | 0.01         | ![4-100-0.01](image/4-100-0.01.png) | ![image](image/image.png) |
+| 100         | 0.1          | ![4-100-0.1](image/4-100-0.1.png) | ![image](image/image (1).png) |
+| 200         | 0.01         | ![4-200-0.01](image/4-200-0.01.png) |  |
+| 200         | 0.1          | ![4-200-0.1](image/4-200-0.1.png) |  |
+
+---
+
+### Features: rooms, buildingarea, yearbuilt, type_code, bedroom2, bathroom, car (7개 변수)
+
+| n_estimators | Learning Rate | Result 1 | Result 2 |
+|-------------|--------------|----------|----------|
+| 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | ![image](image/image (4).png) |
+| 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | ![image](image/image (5).png) |
 
    - features : rooms, buildingarea, yearbuilt (3개 변수)
      1. n_estimators = 100, learning rate : 0.01
