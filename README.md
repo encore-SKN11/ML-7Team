@@ -88,7 +88,11 @@
     <img src="image/folium.png" height="500">
     
 ## 7. Machine Learning
-
+- 사용 모델
+   - Linear Regression : 회귀 모델 중 가장 기본이 되는 모델
+   - RandomForestRegressor : 결정트리를 활용한 배깅의 대표적 알고리즘
+   - XGBRegressor : 트리 기반의 모델이지만 모델의 성능을 향상시키기 위해 학습률을 사용
+   - LGBMRegressor : XGB의 단점을 보완
 ### Features: rooms, buildingarea, car, postcode (4개 변수)
 
 | n_estimators | Learning Rate | RMSE | R² |
