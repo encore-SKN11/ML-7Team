@@ -91,7 +91,7 @@
 
 ### Features: rooms, buildingarea, car, postcode (4개 변수)
 
-| n_estimators | Learning Rate | Result 1 | Result 2 |
+| n_estimators | Learning Rate | RMSE | R² |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![4-100-0.01](image/4-100-0.01.png) | <img src="image/image.png"> |
 | 100         | 0.1          | ![4-100-0.1](image/4-100-0.1.png) | <img src="image/image (1).png">|
@@ -102,21 +102,21 @@
 
 ### Features: rooms, buildingarea, yearbuilt, type_code, bedroom2, bathroom, car (7개 변수)
 
-| n_estimators | Learning Rate | Result 1 | Result 2 |
+| n_estimators | Learning Rate | RMSE | R² |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
 ### Features: rooms, buildingarea, car, postcode, yearbuilt, typecode (6개 변수)
 
-| n_estimators | Learning Rate | Result 1 | Result 2 |
+| n_estimators | Learning Rate | RMSE | R² |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/6-0.01.png) | <img src="image/image (8).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/6-0.1.png) | <img src="image/image (9).png"> |
 
 ### Features: rooms, buildingarea, yearbuilt, type_code (4개 변수)
 
-| n_estimators | Learning Rate | Result 1 | Result 2 |
+| n_estimators | Learning Rate | RMSE | R² |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/4-ty-0.01.png) | <img src="image/image (6).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/4-ty-0.1.png) | <img src="image/image (7).png"> |
