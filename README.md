@@ -107,12 +107,12 @@
 | 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
-### Features: rooms, buildingarea, yearbuilt (3개 변수)
+### Features: rooms, buildingarea, car, postcode, yearbuilt, typecode (6개 변수)
 
 | n_estimators | Learning Rate | Result 1 | Result 2 |
 |-------------|--------------|----------|----------|
-| 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
-| 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
+| 100         | 0.01         | ![7-100-0.01](image/6-0.01.png) | <img src="image/image (8).png"> |
+| 100         | 0.1          | ![7-100-0.1](image/6-0.1.png) | <img src="image/image (9).png"> |
 
 ### Features: rooms, buildingarea, yearbuilt, type_code (4개 변수)
 
