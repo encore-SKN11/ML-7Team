@@ -95,7 +95,7 @@
    - LGBMRegressor : XGB의 단점을 보완
 ### Features: rooms, buildingarea, car, postcode (4개 변수)
 
-| n_estimators | Learning Rate | RMSE | R² |
+| n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![4-100-0.01](image/4-100-0.01.png) | <img src="image/image.png"> |
 | 100         | 0.1          | ![4-100-0.1](image/4-100-0.1.png) | <img src="image/image (1).png">|
@@ -106,21 +106,31 @@
 
 ### Features: rooms, buildingarea, yearbuilt, type_code, bedroom2, bathroom, car (7개 변수)
 
-| n_estimators | Learning Rate | RMSE | R² |
+| n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
 ### Features: rooms, buildingarea, car, postcode, yearbuilt, typecode (6개 변수)
 
-| n_estimators | Learning Rate | RMSE | R² |
+| n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/6-0.01.png) | <img src="image/image (8).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/6-0.1.png) | <img src="image/image (9).png"> |
 
 ### Features: rooms, buildingarea, yearbuilt, type_code (4개 변수)
 
-| n_estimators | Learning Rate | RMSE | R² |
+| n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/4-ty-0.01.png) | <img src="image/image (6).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/4-ty-0.1.png) | <img src="image/image (7).png"> |
+
+
+## 8. 모델 비교 결과
+- 데이터의 분포가 선형성을 띄지 않아 Linear Regression의 결과가 매우 안좋음.
+- XGBRegression과 LGBMRegression의 성능이 대체적으로 좋았음.
+- feature을 바꿔가며 비교해 본 결과, 개수가 너무 적으면 성능이 떨어졌고 Price와의 상관관계가 비교적 높은 feature들을 사용했을 때 성능이 좋았음.
+
+## 9. 기대효과
+- 집의 방 개수, 대지 면적에 따라 멜버른의 집값을 예측할 수 있음.
+- 위도, 경도 등 위치 데이터를 이용하면 멜버른의 어느 지역의 집값이 높은지 확인할 수 있음.
