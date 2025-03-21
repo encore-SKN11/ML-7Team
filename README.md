@@ -93,7 +93,16 @@
    - RandomForestRegressor : 결정트리를 활용한 배깅의 대표적 알고리즘
    - XGBRegressor : 트리 기반의 모델이지만 모델의 성능을 향상시키기 위해 학습률을 사용
    - LGBMRegressor : XGB의 단점을 보완
-### Features: rooms, buildingarea, car, postcode (4개 변수)
+
+### 평가수단
+- RMSE(Root Mean Squared Error) : 평균 제곱근 오차
+   - 추정 값 또는 모델이 예측한 값과 실제 환경에서 관찰되는 값의 차이를 다룰 때 흔히 사용하는 측도
+   - 낮을수록 good
+- $R^2$ (R-squared) : 결정 계수
+   - 회귀 모델에서 독립변수가 종속변수를 얼마만큼 설명해 주는지 가리키는 지표
+   - 높을수록 good
+
+### Features: Rooms, BuildingArea, Car, Postcode (4개 변수)
 
 | n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
@@ -104,21 +113,21 @@
 
 ---
 
-### Features: rooms, buildingarea, yearbuilt, type_code, bedroom2, bathroom, car (7개 변수)
+### Features: Rooms, BuildingArea, Yearbuilt, Type_code, Bedroom2, Bathroom, Car (7개 변수)
 
 | n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/7-100-0.01.png) | <img src="image/image (4).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/7-100-0.1.png) | <img src="image/image (5).png"> |
 
-### Features: rooms, buildingarea, car, postcode, yearbuilt, typecode (6개 변수)
+### Features: Rooms, Buildingarea, Car, Postcode, Yearbuilt, Type_code (6개 변수)
 
 | n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
 | 100         | 0.01         | ![7-100-0.01](image/6-0.01.png) | <img src="image/image (8).png"> |
 | 100         | 0.1          | ![7-100-0.1](image/6-0.1.png) | <img src="image/image (9).png"> |
 
-### Features: rooms, buildingarea, yearbuilt, type_code (4개 변수)
+### Features: Rooms, BuildingArea, Yearbuilt, Type_code (4개 변수)
 
 | n_estimators | Learning Rate | RMSE , R² | XGB Feature Importance |
 |-------------|--------------|----------|----------|
